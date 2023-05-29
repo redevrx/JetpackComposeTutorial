@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "ComposeTutorial"
+include ':app'
+include ':feature:shopui'
+include ':feature:shopui:data'
+include ':feature:shopui:ui'
+include ':core:network'
+include ':core:common'
+include ':core:navigation'
