@@ -13,16 +13,15 @@ import androidx.navigation.NavHostController
 import com.redevrx.composetutorial.navigation.Nav
 import com.redevrx.composetutorial.navigation.NavigationGraph
 import com.redevrx.composetutorial.ui.theme.ComposeTutorialTheme
-import com.redevrx.ui.navigation.ShopDestination
-import com.redevrx.ui.screen.ShopScreen
-import dagger.hilt.android.AndroidEntryPoint
+import com.redevrx.jacketshop.navigation.JacketDestination
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             ComposeTutorialTheme {
-               NavigationGraph()
+                NavigationGraph()
             }
         }
     }
@@ -39,12 +38,10 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview(nav:NavHostController = Nav.current) {
-    ComposeTutorialTheme {
-       Column() {
-           Greeting("Android")
-           Button(onClick = { nav.navigate("${ShopDestination.SHOP_SCREEN.router}") }) {
-               Text(text = "Click")
-           }
-       }
-    }
+    Column() {
+            Greeting("Android")
+            Button(onClick = { nav.navigate("${JacketDestination.JACKET_SCREEN.router}") }) {
+                Text(text = "Click")
+            }
+        }
 }

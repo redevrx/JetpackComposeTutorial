@@ -7,6 +7,7 @@ object Version {
     const val activityCompose = "1.5.1"
     const val bom = "2023.05.01"
     const val composeVersion = "1.4.3"
+    const val material3 = "1.1.0"
 
     ///lifecycle
     const val runtimeKtx = "2.3.1"
@@ -41,7 +42,7 @@ object Compose {
     const val ui = "androidx.compose.ui:ui:${Version.composeVersion}"
     const val graphics = "androidx.compose.ui:ui-graphics:${Version.composeVersion}"
     const val preview = "androidx.compose.ui:ui-tooling-preview"
-    const val material3 = "androidx.compose.material3:material3"
+    const val material3 = "androidx.compose.material3:material3:${Version.material3}"
     const val tooling = "androidx.compose.ui:ui-tooling"
     const val manifest = "androidx.compose.ui:ui-test-manifest"
     const val coil = "io.coil-kt:coil-compose:${Version.coil}"

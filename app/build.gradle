@@ -68,6 +68,7 @@ dependencies {
 
     implementation project(":feature:shopui:ui")
     implementation project(":core:navigation")
+    implementation project(":feature:jacketshop")
 
     testImplementation TestImpl.junit//'junit:junit:4.13.2'
     androidTestImplementation AndroidTest.extJunit

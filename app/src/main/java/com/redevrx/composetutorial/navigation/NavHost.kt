@@ -9,6 +9,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.redevrx.composetutorial.GreetingPreview
+import com.redevrx.jacketshop.navigation.jacketScreen
 import com.redevrx.ui.navigation.shopScreen
 
 val Nav = compositionLocalOf<NavHostController> {
@@ -30,5 +31,6 @@ fun NavigationGraph(){
             GreetingPreview()
         }
         shopScreen()
+        jacketScreen()
     }
 }
